@@ -1,2 +1,0 @@
-# Token
-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
