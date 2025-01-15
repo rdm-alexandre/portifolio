@@ -4,10 +4,19 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: black;
     font-family: "Fira Code", serif;
     color: white;
+    overflow-x: hidden;
+}
+
+section {
+    min-height: 100vh;
 }
 
 h1 {
@@ -29,14 +38,21 @@ span {
 }
 
 ul {
-    list-style: none; /* Remove o marcador de lista */
-    padding: 0; /* Remove o preenchimento */
-    margin: 0; /* Remove a margem */
+    list-style: none;
+    padding: 0; 
+    margin: 0; 
 }
 
+.border{
+    border: 1px solid white;
+}
+
+.border-radius-10{
+    border-radius: 10px;
+}
 
 #ceu-estrelado {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -45,7 +61,7 @@ ul {
     z-index: -1;
 }
 
-.estrela {
+#ceu-estrelado > .estrela {
     position: absolute;
     width: 2px;
     height: 2px;
@@ -54,7 +70,7 @@ ul {
     animation: twinkle 2s infinite ease-in-out;
 }
 
-.estrela-cadente {
+#ceu-estrelado > .estrela-cadente {
     width: 170px;
     height: 2px;
     display: block;
@@ -67,7 +83,7 @@ ul {
     transform: rotateZ(-45deg);
 }
 
-.estrela-cadente::before{
+#ceu-estrelado > .estrela-cadente::before{
     content: "";
     position: absolute;
     bottom: -1px;
@@ -87,16 +103,113 @@ ul {
     position: sticky;
 }
 
-.rede-social:hover{
+.rede-social{
+    color: #b3b3b3;
     cursor: pointer;
-    width: 74px;
-    height: 74px;
-    border-radius: 50%;
+}
+
+.rede-social > #git-hub:hover{
+    color: white;
     transition: 0.5s;
 }
 
-.link{
+.rede-social > #linkedin:hover{
+    color: blue;
+    transition: 0.5s;
+}
+
+.rede-social > .whatsapp:hover{
+    color: green;
+    transition: 0.5s;
+}
+
+.rede-social > #email:hover{
+    color: rgb(100, 28, 28);
+    transition: 0.5s;
+}
+
+#menu{
+    margin-top: 1rem;
+    margin-bottom: 4.8rem;
+}
+
+#menu > li > .link{
+    display: flex;
+    align-items: center;
     color:white;
+    font-size: 30px;
+    gap: 20px;
+    padding-bottom: 5px;
+}
+
+#menu > li > .link:hover{
+    color: #00D0FF;
+    transition: 0.5s;
+}
+
+.card-w-260 {
+    width: 260px;
+    height: 345px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.card-w-340{
+    width: 340px;
+    height: 320px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.card-w-260:hover{
+    border-color: #00D0FF;
+    transition: 0.5s;
+}
+
+.card-w-340:hover{
+    border-color: #00D0FF;
+    transition: 0.5s;
+}
+
+.card-img-interrogacao {
+    width: 90%;
+}
+
+.section{
+    margin-top: 5rem;
+    margin-bottom: 12rem;
+}
+
+
+#span-sobre{
+    font-weight: 600;
+}
+
+.marquee {
+    overflow: hidden;
+    position: relative;
+    mask: linear-gradient(to right, transparent, white 5%, white 95%, transparent);
+}
+  
+.marquee > .marquee-content{
+    display: inline-flex;
+    animation: marquee 10s linear infinite;
+    gap: 20px;
+}
+
+.marquee-content > .imagem-ferramenta {
+    height: 70px;
+    width: 70px;
+    flex-shrink: 0;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
 }
 
 @keyframes shoot {
