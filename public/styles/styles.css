@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika+Negative:wght@300..700&family=Signika:wght@300..700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow-x: hidden;
+	padding-top: 1px;
+}
+
+nav {
+	border: 1px solid !important;
+	border-radius: 25px !important;
+	height: fit-content !important;
+}
+
+nav > ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+h1 {
+	font-family: "Signika Negative", serif !important;
+	font-weight: 700 !important;
+	font-style: normal !important;
+	font-size: 120px !important;
+}
+
+section {
+	height: 100vh;
+}
+
+svg#freepik_stories-bachelor-party:not(.animated) .animable {
+	opacity: 0;
+}
+
+svg#freepik_stories-bachelor-party.animated #freepik--Balloons--inject-2 {
+	animation: 1.5s Infinite  linear floating;animation-delay: 0s;
+}
+
+svg#freepik_stories-digital-tools:not(.animated) .animable {
+		opacity: 0;
+}
+
+svg#freepik_stories-digital-tools.animated #freepik--background-simple--inject-61 {
+	animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slide-left;animation-delay: 0s;
+}
+
+svg#freepik_stories-digital-tools.animated #freepik--Calculator--inject-61 {
+	animation: 1.5s Infinite  linear floating;animation-delay: 0s;
+}
+
+svg#freepik_stories-digital-tools.animated #freepik--Alarm--inject-61 {
+	animation: 1.5s Infinite  linear floating;animation-delay: 0s;
+}
+
+svg#freepik_stories-digital-tools.animated #freepik--Locator--inject-61 {
+	animation: 1.5s Infinite  linear floating;animation-delay: 0s;
+}
+
+svg#freepik_stories-digital-tools.animated #freepik--Camera--inject-61 {
+	animation: 1.5s Infinite  linear floating;animation-delay: 0s;
+}
+
+svg#freepik_stories-digital-tools.animated #freepik--speech-bubbles--inject-61 {
+	animation: 1.5s Infinite  linear floating;animation-delay: 0s;
+}
+
+svg#freepik_stories-digital-tools.animated #freepik--Gears--inject-61 {
+	animation: 1.5s Infinite  linear floating;animation-delay: 0s;
+}
+
+svg#freepik_stories-digital-tools.animated #freepik--Envelope--inject-61 {
+	animation: 1.5s Infinite  linear floating;animation-delay: 0s;
+}
+
+svg#freepik_stories-digital-tools.animated #freepik--Clock--inject-61 {
+	animation: 1.5s Infinite  linear floating;animation-delay: 0s;
+}
+
+svg#freepik_stories-digital-tools.animated #freepik--Calendar--inject-61 {
+	animation: 1.5s Infinite  linear floating;animation-delay: 0s;
+}
+
+svg#freepik_stories-digital-tools.animated #freepik--Padlock--inject-61 {
+	animation: 1.5s Infinite  linear floating;animation-delay: 0s;
+}
+
+.hidden {
+	display: none;
+}
+
+
+/* ==== Navbar ===== */
+	.nav-link {
+		font-size: 32px !important;
+	}
+
+	.nav-link-button {
+		font-size: 20px !important;
+		text-decoration: none;
+		color: white;
+		background-color: #007BFF;
+		border-radius: 25px;
+	}
+
+	.navbar-image {
+		width: 100px; 
+		border-radius: 50%;
+		border: 5px solid #007BFF
+	}
+
+	.navbar-button {
+		border: none !important;
+		box-shadow: none !important;
+	}
+	.navbar-button:active {
+		background-color: #f6f6f6;
+	}
+/* ==== End of Navbar ==== */
+
+
+/* ==== Home ==== */
+	.span-subtitle {
+		font-size: 31.1px;
+		color: #007BFF;
+	}
+
+    .marquee {
+        overflow: hidden;
+        position: relative;
+        mask: linear-gradient(to right, transparent, white 5%, white 95%, transparent);
+    }
+      
+    .marquee > .marquee-content{
+        display: inline-flex;
+        animation: marquee 10s linear infinite;
+        gap: 20px;
+    }
+    
+    .marquee-content > .imagem-ferramenta {
+        height: 70px;
+        width: 70px;
+        flex-shrink: 0;
+    }
+/* ==== End of Home ==== */
+
+
+/* ==== About ==== */
+	.about-text {
+		font-size: 36px !important;
+		font-family: "Signika", serif !important;
+		color: #454545 !important;
+		transition: 1s;
+	}
+
+	.bar {
+		width: 136px;
+		height: 7px;
+		background-color: #454545;
+	}
+
+	.bar-active {
+		background-color: #007BFF;
+		transition: 1s;
+	}
+/* ==== End of About ==== */
+
+
+/* ==== Soluctions ==== */
+	#soluctions {
+		height: auto !important;
+	}
+
+	.soluctions-link {
+		align-items: center;
+        display: flex;
+        text-decoration: none;
+	}
+
+	.soluctions-subtitle {
+		display: flex;
+		align-items: center;
+        color: #007BFF;
+		gap: 10px;
+	}
+
+	.soluctions-subtitle-content {
+		font-size: 38px;
+	}
+
+	.soluctions-text {
+		color: #454545;
+		font-size: 36px;
+	}
+
+	.soluctions-image {
+		width: 70%;
+	}
+
+	.button-whatsapp {
+		width: 30%;
+	}
+/* ==== End of Soluctions ==== */
+
+
+/* ==== Contact ===== */
+	#contact {
+		margin-top: 10rem;
+	}
+
+	.contact-form-content {
+		border: 1px solid black;
+		border-radius: 20px;
+		height: 45rem;
+	}
+
+	.contact-form-subtitle {
+		color: #007BFF;
+		font-size: 47px;
+	}
+
+	.contact-form-input{
+		padding: 20px !important;
+		border: 1px solid #007BFF !important;
+		border-radius: 25px !important;
+		height: 55px !important;
+		font-size: 30px !important;
+	}
+
+	.contact-form-textarea {
+		padding: 20px !important;
+		border: 1px solid #007BFF !important;
+		border-radius: 25px !important;
+		font-size: 30px !important;
+	}
+
+	.contact-form-button {
+		height: 53px;
+		width: 50%;
+		font-size: 20px !important;
+		border-radius: 25px !important;
+		background-color: #007BFF !important;
+	}
+/* ==== End of Contact ==== */
+
+
+/* ==== Fonts ==== */
+	.font-poppins {
+		font-family: "Poppins", serif !important;
+		font-style: normal !important;
+	}
+
+	.poppins-bold {
+		font-weight: 700 !important;
+	}
+
+	.font-signica-negative {
+		font-family: "Signika Negative", serif !important;
+		font-weight: 400 !important;
+		font-style: normal !important;
+	}
+
+	.signica-negative-bold {
+		font-weight: 700 !important;
+	}
+
+	.signica-negative-regular {
+		font-weight: 500;
+	}
+/* ==== End of Fonts ==== */
+
+
+/* ==== Effects ==== */
+	.floating {
+		animation: floating 2s ease-in-out infinite;
+	}
+
+	.pulsing{
+		position: relative;
+	}
+
+	.pulsing::before, .pulsing::after{
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: #007bff60;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		border-radius: 25px;
+		animation: pulsing 1s ease-in-out infinite;
+	}
+
+	.fade-in {
+		animation: fade-in 1s ease-in-out forwards;
+	}
+
+	.fade-out-scroll {
+		animation: fade-out 1ms ease-in-out forwards;
+		animation-timeline: view();
+		animation-range: cover 0% cover 30%;
+	}
+
+	.fade-in-scroll {
+		animation: fade-in 1ms ease-in-out forwards;
+		animation-timeline: view();
+		animation-range: cover 0% cover 30%;
+	}
+
+	.slide-left-scroll {
+		animation: slide-left 1ms ease-in-out forwards;
+		animation-timeline: view();
+		animation-range: cover 0% cover 30%;
+	}
+
+	.slide-right-scroll {
+		animation: slide-right 1ms ease-in-out forwards;
+		animation-timeline: view();
+		animation-range: cover 0% cover 50%;
+	}
+/* ==== End of effects ==== */
+
+
+/* ==== Keyframes ==== */
+    @keyframes marquee {
+        from {
+            transform: translateX(0%);
+        }
+        to {
+            transform: translateX(-50%);
+        }
+    }
+
+	@keyframes floating {
+		0% { transform: translateY(0px); }
+		50% { transform: translateY(-10px); }
+		100% { transform: translateY(0px); }
+	}
+
+	@keyframes pulsing {
+		100%{
+			transform: scale(1.1);
+			opacity: 0;
+		}
+
+	}
+
+	@keyframes fade-in {
+		from {
+			opacity: 0;
+			transform: translateY(20px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	@keyframes fade-out {
+		from {
+			opacity: 1;
+			transform: translateY(0);
+		}
+		to {
+			opacity: 0;
+			transform: translateY(20px);
+		}
+	}
+	            
+	@keyframes slide-left {
+		0% {
+			opacity: 0;
+			translate: -100vw 0;
+		}100% {
+			opacity: 1;
+			translate: 0 0;
+		}
+	}
+
+	@keyframes slide-right {
+		0% {
+			opacity: 0;
+			translate: 100vw 0;
+		}
+		100% {
+			opacity: 1;
+			translate: 0 0;
+		}
+	}
+	
+/* ==== End of Keyframes ==== */
+
+
+/* ==== Media Querys ==== */
+	@media (max-width: 742px) {
+		h1 {
+			font-size: 60px !important;
+		}
+
+        #h1-title {
+            margin-top: 60px !important;
+        }
+
+	/* Navbar */
+		.navbar-image {
+			width: 60px;
+		}
+
+		.navbar-content-links {
+			justify-content: center;
+			margin-bottom: 15px;
+		}
+
+		.navbar-content-contact {
+			justify-content: center;
+		}
+
+	/* Home */
+		.span-subtitle {
+			font-size: 26px;
+			color: #007BFF;
+		}
+
+		#home-img-tree {
+			align-self: center;
+		}
+	
+	/* About */
+		#about {
+			height: auto !important;
+		}
+
+		.about-content {
+			text-align: justify;
+			transition: 1s;
+		}
+
+        .about-text {
+            font-size: 20px !important;
+        }
+	
+	/* Soluctions */
+		#soluctions {
+			margin-top: 10rem;
+		}
+
+        .soluctions-link {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .button-whatsapp {
+            width: 25px;
+            height: 30px;
+        }
+
+        .soluctions-subtitle-content {
+            font-size: 30px;
+        }
+
+        .soluctions-text {
+            font-size: 20px;
+        }
+	
+	}
+/* ==== End of Media Querys ==== */
